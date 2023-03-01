@@ -69,7 +69,8 @@ step("Choose an appointment on day <apptDay> in the month of <apptMonth>", async
 
 // handles timezone selection
 step("Choose a timezone of <timezone>", async (timezone) => {
-  await dropDown(toRightOf('Select Date & Time')).select(timezone);
+  await click($("//input[@class='react-select-custom__input']"));
+  await click(text(timezone));
 });
 
 // handles appointment selection
@@ -95,10 +96,10 @@ step("Enter meeting notes as follows: <meetingNotes>", async (meetingNotes) => {
 
 // clicks on Confirm
 step("Confirm the appointment", async () => {
-  await click(button("Confirm"));
+  await click(button("Schedule"));
 });
 
 // checks if we've reached the end
 step("Must display <displayText>", async (displayText) => {
-    assert.ok(await text(displayText).exists());
+  assert.ok(await text(displayText).exists(500, 2000));
 });

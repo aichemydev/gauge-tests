@@ -6,5 +6,5 @@ See the `specs` directory for the narrative specifications and the `tests`
 directory for the implementation of the steps.
 
 ## How to run
-1. `npm install -D`
+1. `npm install`
 2. `npm test`

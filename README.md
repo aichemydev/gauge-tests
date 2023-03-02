@@ -6,8 +6,27 @@ See the `specs` directory for the narrative specifications and the `tests`
 directory for the implementation of the steps.
 
 ## How to run
-1. `npm install`
-2. `npm test`
+
+You will need the gauge CLI. Install it first using npm:
+
+```
+npm install -g @getgauge/cli
+```
+
+That will install the gauge CLI globally, so `sudo npm install -g @getgauge/cli`
+may be required.
+
+Then install the dependencies in this repo:
+
+```
+npm install
+```
+
+Then run the test:
+
+```
+npm test
+```
 
 ## To slow down the test run for live events
 

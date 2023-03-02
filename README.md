@@ -12,5 +12,5 @@ directory for the implementation of the steps.
 ## To slow down the test run for live events
 
 1. `export TAIKO_PLUGIN=delay`
-2. `export `TAIKO_DELAY_SECONDS=2.0`
+2. `export TAIKO_DELAY_SECONDS=2.0`
 3. `npm test`

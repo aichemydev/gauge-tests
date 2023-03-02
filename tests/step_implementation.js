@@ -44,6 +44,10 @@ step("Open the calendar application", async () => {
   await goto("https://demo-calendar.wring.dev");
 });
 
+step("Open the old calendar application", async () => {
+  await goto("https://calendar.testgold.dev");
+});
+
 // handles the initial navigation to the appt page
 step("Go to the appointment page for a <meetingType>", async (meetingType) => {
   await click(meetingType);

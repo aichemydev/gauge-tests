@@ -2,7 +2,7 @@
 
 Open the browser before the run.
 
-* Open the calendar application
+* Open the old calendar application
 
 ## Schedule an appointment
 

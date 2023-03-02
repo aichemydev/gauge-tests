@@ -7,7 +7,9 @@ directory for the implementation of the steps.
 
 ## How to run
 
-You will need the gauge CLI. Install it first using npm:
+You will need the gauge CLI. See: https://docs.gauge.org/getting_started/installing-gauge.html
+
+Install it using npm:
 
 ```
 npm install -g @getgauge/cli

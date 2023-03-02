@@ -67,6 +67,7 @@ step("Choose an appointment length of <appointmentLength>", async (appointmentLe
 // handles the date selection in calendar
 step("Choose an appointment on day <apptDay> in the month of <apptMonth>", async (apptDay, apptMonth) => {
   let dayLabel = apptDay + " " + apptMonth;
+  dayLabel = apptMonth + " " + apptDay;
   console.log(`looking for calendar box with abbr starting with: ${dayLabel}`);
   await click($(`//abbr[starts-with(@aria-label, '${dayLabel}')]`));
 });

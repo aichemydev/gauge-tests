@@ -41,7 +41,7 @@ afterSuite(async () => {
 
 // opens the app
 step("Open the calendar application", async () => {
-  await goto("https://calendar.testgold.dev");
+  await goto("https://demo-calendar.wring.dev");
 });
 
 // handles the initial navigation to the appt page
